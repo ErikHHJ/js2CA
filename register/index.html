@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="../dist/css/main.css">
     <script src="./node_modules/bootstrap/dist/css/bootstrap.css"></script>
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="./js/script.js" defer></script>
+    <script src="../js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/86fb0fb587.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -43,11 +43,18 @@
         <form action="./profile" method="get" class="was-validated p-5">
             <!-- Email input -->
             <div class="form-outline mb-4">
-                <label for="uname" class="form-label">Username:</label>
+                <label for="uname" class="form-label">Full Name</label>
                 <input type="text" class="form-control" id="uname" placeholder="Enter username" minlength="8" name="uname" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
+
+            <div class="form-outline mb-4">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter username" name="uname" required>
+              <div id="valid" class="valid-feedback">Valid.</div>
+              <div id="invalid" class="invalid-feedback">Please fill out this field.</div>
+          </div>
           
             <!-- Password input -->
             <div class="form-outline mb-4">
@@ -85,41 +92,14 @@
             <div class="row mb-4">
               <div class="col d-flex justify-content-center">
                 <!-- Checkbox -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-                  <label class="form-check-label" for="form2Example31"> Remember me </label>
-                </div>
-              </div>
-          
-              <div class="col">
-                <!-- Simple link -->
-                <a href="#!">Forgot password?</a>
-              </div>
+                
             </div>
           
             <!-- Submit button -->
             <a href="./profile"><button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button></a>
           
             <!-- Register buttons -->
-            <div class="text-center">
-              <p>Not a member? <a href="./register/index.html">Register</a></p>
-              <p>or sign up with:</p>
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </button>
-          
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-google"></i>
-              </button>
-          
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-twitter"></i>
-              </button>
-          
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-github"></i>
-              </button>
-            </div>
+           
           </form>
       </div>
     
